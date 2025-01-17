@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF mit Thumbnails</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+	    overflow-x: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Seite nimmt mindestens die gesamte Höhe ein */
+        }
+        .image-container {
+            flex: 2; /* Der PDF-Bereich nimmt den Hauptteil der Seite ein */
+            text-align: center;
+	    display: flex;
+	   align-items: center;
+	   justify-content: center;
+	   overflow-x: hidden;
+        }
+.image-container img{
+            maxwidth: 100%;
+height: auto;  
+      }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 90vh; /* PDF nimmt 80% der Höhe des Bildschirms ein */
+        }
+        .social-links {
+            text-align: center;
+            padding: 10px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+        }
+        .social-links img {
+            width: 100px; /* Breite des Icons */
+            height: auto; /* Höhe wird automatisch angepasst */
+            border-radius: 0; /* Keine abgerundeten Ecken */
+            box-shadow: none; /* Keine Schatteneffekte */
+            transition: transform 0.3s;
+        }
+        .social-links img:hover {
+            transform: scale(1.1); /* Vergrößert das Icon beim Hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PDF einbinden -->
+    <iframe src="A4D Home_Neu.jpg"></iframe>
+<div style="padding: 0;"><iframe id="eventim-light-iframe-v2-678983a0b3d730624dabd9c3-event-678983a0b3d730624dabd9c3" src="https://www.eventim-light.com/de/a/67898146b3d730624dabd9b9/iframe/e/678983a0b3d730624dabd9c3/" width="100%" data-scroll="true" data-scroll-offset-y="0" scrolling="no" frameborder="0" name="eventim-light-iframe-v2-678983a0b3d730624dabd9c3-event-678983a0b3d730624dabd9c3"></iframe><script type="text/javascript" src="https://www.eventim-light.com/de/a/67898146b3d730624dabd9b9/public/iframe/el-shop.js"></script></div>
+    <!-- Links zu YouTube und Instagram -->
+    <div class="social-links">
+        <a href="https://www.youtube.com/@Ale4Demise_music" target="_blank">
+            <img src="icon_YT.png">
+        </a>
+        <a href="https://www.instagram.com/ale4demise_music" target="_blank">
+            <img src="icon_insta.png">
+        </a>
+    </div>
+</body>
+</html>
