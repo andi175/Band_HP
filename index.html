@@ -16,9 +16,9 @@
 
     /* Wrapper für maximale Breite */
     .wrapper {
-      max-width: 1200px; /* Maximale Breite für große Bildschirme */
-      margin: 0 auto;    /* Zentriert den Inhalt */
-      padding: 0 15px;   /* Abstand zum Rand */
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
     }
 
     /* Titel */
@@ -29,10 +29,10 @@
 
     /* Bild-Styling */
     img {
-      max-width: 100%; /* Bild passt sich der Breite des Containers an */
-      height: auto;    /* Höhe bleibt proportional */
+      max-width: 100%;
+      height: auto;
       display: block;
-      margin: 20px auto; /* Bild zentriert */
+      margin: 20px auto;
     }
 
     /* Konzertinfos */
@@ -47,40 +47,48 @@
 
     .info h2 {
       margin: 0 0 10px;
-      font-size: 50px;
+      font-size: 48px;
     }
 
-    .info a {
-      color: #007BFF;
-      text-decoration: none;
+    .info h3 {
+      margin: 10px 0;
+      font-size: 36px;
+    }
+
+    .info h4 {
+      margin: 5px 0;
+      font-size: 20px;
+    }
+
+    .info .event-details {
+      font-size: 28px;
+      margin-top: 10px;
+    }
+
+    .info p {
+      font-size: 24px;
       font-weight: bold;
+      margin-top: 20px;
     }
 
-    .info a:hover {
-      text-decoration: underline;
-    }
-
-    /* Links unten */
     .footer {
-      display:flex; /* Drückt den Footer nach unten */
-justify-content: center;
-align-items:center;
-gap: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
       background: #f8f8f8;
       padding: 20px 0;
-      text-align: center;
     }
 
     .footer a {
-      margin: 0 10px;
       text-decoration: none;
     }
 
     .footer img {
-      width: 50px; /* Größe der Thumbnails */
+      width: 50px;
       height: 50px;
       object-fit: cover;
-      border-radius: 5px; /* Optional: leicht abgerundete Kanten */
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -92,25 +100,26 @@ gap: 20px;
     <img src="konzertplakat.jpg" alt="Konzertplakat">
 
     <!-- Konzertinfos -->
-    <div class="info"; background: #f255f153f31>
-      <h2>Konzert 16.04.2025</h2>
-     
-<h3>Feierwerk Kranhalle   Hansastraße 39   81373 München</h3>
-          <h3>     Einlass 19:00    Beginn 20:00 </h3>
- 
-  
-      <a href="https://www.eure-konzertseite.de" target="_blank">Zur Konzert-Homepage</a>
+    <div class="info">
+      <h2>Ale4Demise & Anderson Dorn</h2>
+      <h3>16.04.2025</h3>
+      <h3 style="font-size: 32px;">Feierwerk Kranhalle</h3>
+      <h4>Hansastraße 39, 81373 München</h4>
+      <h3 class="event-details">Einlass 19:00 | Beginn 20:00</h3>
+      
+      <p>Tickets bald erhältlich</p>
     </div>
   </div>
 
   <!-- Footer mit Links -->
   <div class="footer">
     <a href="https://www.youtube.com/@Ale4Demise_music" target="_blank">
-      <img src="youtube-thumbnail.png" >
+      <img src="youtube-thumbnail.png" alt="YouTube">
     </a>
     <a href="https://www.instagram.com/ale4demise_music" target="_blank">
-      <img src="instagram-thumbnail.png" >
+      <img src="instagram-thumbnail.png" alt="Instagram">
     </a>
   </div>
 </body>
 </html>
+
